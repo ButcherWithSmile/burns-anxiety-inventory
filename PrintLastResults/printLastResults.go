@@ -9,11 +9,11 @@ import (
 )
 
 const (
-	host     = "localhost"
-	port     = 5432
-	user     = "postgres"
-	password = 5723245
-	dbname   = "BAIT"
+	host     = // Enter your hostname
+	port     = // Enter your port number
+	user     = // Enter your PostgreSQL username
+	password = // Enter your password
+	dbname   = // Enter your database name
 )
 
 type Patient struct {
