@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hatef/Burns_Anxiety_Intensity_Test/PrintLastResults"
-	"github.com/hatef/Burns_Anxiety_Intensity_Test/SymptomsOfPhysicalDiscomfort"
-	"github.com/hatef/Burns_Anxiety_Intensity_Test/WorryingFeelings"
-	"github.com/hatef/Burns_Anxiety_Intensity_Test/WorryingThoughts"
+	"github.com/Hatef-PR/Burns-Anxiety-Inventory/PrintLastResults"
+	"github.com/Hatef-PR/Burns-Anxiety-Inventory/SymptomsOfPhysicalDiscomfort"
+	"github.com/Hatef-PR/Burns-Anxiety-Inventory/WorryingFeelings"
+	"github.com/Hatef-PR/Burns-Anxiety-Inventory/WorryingThoughts"
 
 
 	"database/sql"
