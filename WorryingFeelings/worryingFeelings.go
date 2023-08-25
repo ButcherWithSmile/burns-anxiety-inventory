@@ -2,7 +2,7 @@ package worryingFeelings
 
 import (
 	t "fmt"
-	ci "github.com/hatef/Burns_Anxiety_Intensity_Test/CheckInput"
+	ci "github.com/Hatef-PR/Burns-Anxiety-Inventory/CheckInput"
 	"strings"
 )
 
