@@ -4,11 +4,11 @@ To take the BAI, you simply read each question and indicate on a scale from 0 to
 
 0 - Not at all
 
-1 - Somewhat
+1 - A little
 
-2 - Moderately
+2 - Partially
 
-3 - A lot
+3 - Very much
 
 Once you have answered all 33 questions, you tally up your total score. Scores are interpreted as follows:
 
