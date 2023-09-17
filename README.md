@@ -46,9 +46,16 @@ Before you can run this application, make sure you have the following prerequisi
 
 - `main.go`: The main application file. It contains the code to interact with the user, collect responses, and store them in the PostgreSQL database.
 
-- `models/question.go`: Defines the structure of the Question entity, which corresponds to the PostgreSQL table schema for storing question responses.
+- `WorryingFeelings/worryingFeelings.go`: Asks questions about the level of worrying feelings of the user and receives their answers.
 
-- `database/database.go`: Handles database initialization and connection setup using the PostgreSQL driver.
+- `WorryingThoughts/worryingThoughts.go`: Asks questions about the level of worrying thoughts of the user and receives their answers.
+
+- `CheckInput/checkInput.go`: Checks the inputs are valid and correct.
+
+- `SymptomsOfPhysicalDiscomfort/symptomsOfPhysicalDiscomfort.go`: Based on the user's answers about worrying feelings and thoughts, it examines their symptoms.
+
+- `PrintLastResults/printLastResults.go`: Shows the final answer about the level of anxiety of the user and also shows the answer of the last test result recorded in the database.
+
 
 ## Contributing
 
