@@ -31,7 +31,7 @@ Before you can run this application, make sure you have the following prerequisi
    cd burns-anxiety-inventory
    ```
 
-3. Configure the PostgreSQL database connection in the `main.go` file. Update the `dsn` variable with your PostgreSQL connection details.
+3. Configure the PostgreSQL database connection in the `main.go` file.
 
 4. Build and run the application:
    ```
