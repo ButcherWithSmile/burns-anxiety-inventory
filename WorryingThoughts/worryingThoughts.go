@@ -1,3 +1,5 @@
+// This package imports the necessary libraries for printing text to the console, getting user input, and converting strings to integers
+
 package worryingThoughts
 
 import (
@@ -6,10 +8,12 @@ import (
 	"strings"
 )
 
+// This constant stores the options that are presented to the user and the separator that is used to print the options
 const options = "0: Not at all | 1: A little | 2: Partially | 3: Very much"
 
 var separator = strings.Repeat("_", 35)
 
+// This function prints the title and separator for the Worrying Thoughts section of the Burns Anxiety Inventory
 func WorryingThoughts() int {
 	t.Println("Group 2: Worrying thoughts")
 	t.Println(separator)
