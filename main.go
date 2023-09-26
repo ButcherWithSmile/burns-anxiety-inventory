@@ -51,6 +51,7 @@ func main() {
 	p.score = worryingFeelings.WorryingFeelings() + worryingThoughts.WorryingThoughts() +
 		SymptomsOfPhysicalDiscomfort.SymptomsOfPhysicalDiscomfort()
 
+	// Calculate anxiety level based on the score
 	switch {
 	case p.score >= 0 && p.score <= 4:
 		p.result = "Little anxiety"
@@ -70,25 +71,31 @@ func main() {
 		dateLayout, p.score)
 	fmt.Printf("Your anxiety inventory is: %q.\n", p.result)
 
+	// Construct the data source string for the database connection
 	dataSource := fmt.Sprintf("host=%s port=%d user=%s password=%d dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
 
+	// Open a connection to the database
 	db, err := sql.Open("postgres", dataSource)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer db.Close()
 
+	// Define the SQL INSERT statement
 	sqlStatement := `
         INSERT INTO patient (name, age, date, score, result)
         VALUES ($1, $2, $3, $4, $5)
         RETURNING id`
+	
+	// Execute the SQL INSERT statement
 	id := 1
 	err = db.QueryRow(sqlStatement, p.name, p.age, p.date, p.score, p.result).Scan(&id)
 	if err != nil {
 		panic(err)
 	}
 
+	// Print the last recorded results for the patient
 	PrintLastResults.PrintLastResults(p.name)
 
 	fmt.Println("Press any key to exit...")
