@@ -50,11 +50,11 @@ Before you can run this application, make sure you have the following prerequisi
 
 - `WorryingThoughts/worryingThoughts.go`: Asks questions about the level of worrying thoughts of the user and receives their answers.
 
-- `CheckInput/checkInput.go`: Checks the inputs are valid and correct.
+- `CheckInput/checkInput.go`: Imports the necessary libraries for reading user input and converting it to an integer.
 
-- `SymptomsOfPhysicalDiscomfort/symptomsOfPhysicalDiscomfort.go`: Based on the user's answers about worrying feelings and thoughts, it examines their symptoms.
+- `SymptomsOfPhysicalDiscomfort/symptomsOfPhysicalDiscomfort.go`: Imports the necessary libraries for printing text to the console, getting user input, and converting strings to integers.
 
-- `PrintLastResults/printLastResults.go`: Shows the final answer about the level of anxiety of the user and also shows the answer of the last test result recorded in the database.
+- `PrintLastResults/printLastResults.go`: Imports the necessary libraries for connecting to a PostgreSQL database, querying data, and formatting dates.
 
 
 ## Contributing
